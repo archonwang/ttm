@@ -1,7 +1,10 @@
 class SubscriptionChangeToDate < ActiveRecord::Migration
-   def change
-     change_column :subscriptions, :begindate, :date
-     change_column :subscriptions, :enddate, :date
-   end
+  def up
+      change_column :subscriptions, :begindate, :date
+      change_column :subscriptions, :enddate, :date
+  end
+  def down
+
+  end
  end
 
